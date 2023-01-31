@@ -1,5 +1,5 @@
 pkgname=breeze-andromeda-git
-pkgver=5.22.80_r2190.g29f1ef63
+pkgver=5.27.80_r2565.g144ea450
 pkgrel=1
 arch=($CARCH)
 pkgdesc='Artwork, styles and assets for the Breeze-Andromeda visual style for the Plasma Desktop'
