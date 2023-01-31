@@ -17,6 +17,7 @@ sha256sums=('SKIP')
 
 pkgver() {
   cd ${pkgname%-git}
+  git checkout Plasma/5.26 &>/dev/null
   _ver="$(grep -m1 'set(PROJECT_VERSION' CMakeLists.txt | cut -d '"' -f2 | tr - .)"
   echo "${_ver}_r$(git rev-list --count HEAD).g$(git rev-parse --short HEAD)"
 }
